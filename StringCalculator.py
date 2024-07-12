@@ -3,7 +3,7 @@ import re
 def add(num):
   answer = num.split(',')
   
-def find_numeric_values_with_regex(s):
+def find_numeric_values_with_regex(answer):
     # Use regular expression to find all numeric values
     numeric_values = re.findall(r'\d+', s)
     return numeric_values
