@@ -4,7 +4,6 @@ def add(num):
     answers = num.split(,)
     test_strings = answers
     # Example usage
-    test_strings = answers
     return answers
 def find_numeric_values_with_regex(s):
      # Use regular expression to find all numeric values
