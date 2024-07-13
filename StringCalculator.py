@@ -1,7 +1,5 @@
 import re
 
-
-    
 def find_numeric_values_with_regex(s):
     numeric_values = re.findall(r'\d+', s)
     return numeric_values
