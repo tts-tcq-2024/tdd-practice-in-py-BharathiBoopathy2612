@@ -5,6 +5,6 @@ def find_numeric_values_with_regex(s):
     return numeric_values
 
 def add(num):
-    for test_string in num:
-        numeric_values = find_numeric_values_with_regex(test_string)
-        print(f"Numeric values in '{test_string}': {numeric_values}")
+  
+        numeric_values = find_numeric_values_with_regex(num)
+        print(f"Numeric values in '{num}': {numeric_values}")
