@@ -21,7 +21,7 @@ class TestStringCalculator(unittest.TestCase):
                 self.assertEqual(add("1\n2,3"),6);
                 
         def test_expectunknownamountofnumbers(self):
-                self.assertEqual(add("1\n2777778,3"),6);
+                self.assertEqual(add("2000\n2,3"),6);
         
 
 
