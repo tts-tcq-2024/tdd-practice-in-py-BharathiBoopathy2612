@@ -1,1 +1,21 @@
+import re
 
+def sum_numeric_values_with_limit_regex(s, limit=1000):
+    # Use regular expression 
+    numeric_values = re.findall(r'\d+', s)
+    numeric_sum = 0
+
+    # Convert numeric strings 
+    for value in numeric_values:
+        num = int(value)
+        if numeric_sum + num > limit:
+            break
+        numeric_sum += num
+
+    return numeric_sum
+
+def add(num):
+    numeric_sum = sum_numeric_values_with_limit_regex(num)
+    print(f"Sum of numeric values in '{num}' with limit 1000: {numeric_sum}")
+    return numeric_sum
+        

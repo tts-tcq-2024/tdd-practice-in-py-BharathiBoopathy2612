@@ -15,10 +15,21 @@ class TestStringCalculator(unittest.TestCase):
                 self.assertEqual(add("1,1001"), 1)
                 
         def test_expectSumWithCustomDelimiter(self):
-                self.assertEqual(add("//;\n1;2"), 3)
+                self.assertEqual(add("//;\n1,2"), 3)
                 
         def test_expectSumWithNewlineDelimiter(self):
                 self.assertEqual(add("1\n2,3"),6);
+                
+        def test_expectunknownamountofnumbers(self):
+                self.assertEqual(add("2000\n2,3"),3);
+                
+        def test_expectinvalidvalues(self):
+                self.assertEqual(add("1,\n"),-1);
+
+#Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[]\n12***3” should return 6
+
+        def test_expectinvalidvalues(self):
+                self.assertEqual(add("//[]\n12***3"),6);
         
 
 
