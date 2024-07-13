@@ -25,6 +25,11 @@ class TestStringCalculator(unittest.TestCase):
                 
         def test_expectinvalidvalues(self):
                 self.assertEqual(add("1,\n"),-1);
+
+#Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[]\n12***3” should return 6
+
+        def test_expectinvalidvalues(self):
+                self.assertEqual(add("//[]\n12***3"),6);
         
 
 
