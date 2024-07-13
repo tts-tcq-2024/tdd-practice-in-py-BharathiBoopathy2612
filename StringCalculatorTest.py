@@ -22,6 +22,9 @@ class TestStringCalculator(unittest.TestCase):
                 
         def test_expectunknownamountofnumbers(self):
                 self.assertEqual(add("2000\n2,3"),3);
+                
+        def test_expectinvalidvalues(self):
+                self.assertEqual(add("1,\n"),3);
         
 
 
