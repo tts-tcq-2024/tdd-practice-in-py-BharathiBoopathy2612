@@ -16,5 +16,6 @@ def sum_numeric_values_with_limit_regex(s, limit=1000):
 
 def add(num):
     numeric_sum = sum_numeric_values_with_limit_regex(num)
+    print(f"Sum of numeric values in '{num}' with limit 1000: {numeric_sum}")
     return numeric_sum
         
